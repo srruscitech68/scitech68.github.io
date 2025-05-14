@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบเช็คกิจกรรม - คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฎสุรินทร์</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="มหาวิทยาลัยราชภัฎสุรินทร์">
+            <h1>ระบบเช็คกิจกรรม<br>คณะวิทยาศาสตร์และเทคโนโลยี</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="activity-form">
+            <h2>แบบฟอร์มลงทะเบียนกิจกรรม</h2>
+            <form id="activityForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="studentId">รหัสนักศึกษา</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentName">ชื่อ-นามสกุล</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="major">สาขาวิชา</label>
+                    <select id="major" name="major" required>
+                        <option value="">-- กรุณาเลือกสาขาวิชา --</option>
+                        <option value="ค.บ.วิทยาศาสตร์ทั่วไป">ค.บ.วิทยาศาสตร์ทั่วไป</option>
+                        <option value="ค.บ.ชีววิทยา">ค.บ.ชีววิทยา</option>
+                        <option value="ค.บ.เคมี">ค.บ.เคมี</option>
+                        <option value="ค.บ.ฟิสิกส์">ค.บ.ฟิสิกส์</option>
+                        <option value="ค.บ.คณิตศาสตร์">ค.บ.คณิตศาสตร์</option>
+                        <option value="ค.บ.คอมพิวเตอร์">ค.บ.คอมพิวเตอร์</option>
+                        <option value="ค.บ.คหกรรมศาสตร์">ค.บ.คหกรรมศาสตร์</option>
+                        <option value="วท.บ.วิทยาการคอมพิวเตอร์">วท.บ.วิทยาการคอมพิวเตอร์</option>
+                        <option value="วท.บ.วิทยาศาสตร์สิ่งแวดล้อม">วท.บ.วิทยาศาสตร์สิ่งแวดล้อม</option>
+                        <option value="วท.บ.เคมีประยุกต์">วท.บ.เคมีประยุกต์</option>
+                        <option value="วท.บ.ชีววิทยาเชิงสร้างสรรค์">วท.บ.ชีววิทยาเชิงสร้างสรรค์</option>
+                        <option value="วท.บ.สาธารณสุขศาสตร์">วท.บ.สาธารณสุขศาสตร์</option>
+                        <option value="วท.บ.คณิตศาสตร์">วท.บ.คณิตศาสตร์</option>
+                        <option value="วท.บ.ธุรกิจการแปรรูปอาหาร">วท.บ.ธุรกิจการแปรรูปอาหาร</option>
+                        <option value="พท.บ.การแพทย์แผนไทย">พท.บ.การแพทย์แผนไทย</option>
+                        <option value="ส.บ. การส่งเสริมสุขภาพเด็กและผู้สูงอายุ">ส.บ. การส่งเสริมสุขภาพเด็กและผู้สูงอายุ</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">ชั้นปี</label>
+                    <select id="year" name="year" required>
+                        <option value="">-- กรุณาเลือกชั้นปี --</option>
+                        <option value="1">ปี 1</option>
+                        <option value="2">ปี 2</option>
+                        <option value="3">ปี 3</option>
+                        <option value="4">ปี 4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>เลือกกิจกรรม</label>
+                    <div class="activity-options">
+                        <label class="activity-option">
+                            <input type="radio" name="activity" value="ปฐมนิเทศนักศึกษาใหม่ระดับคณะ" required>
+                            <span>ปฐมนิเทศนักศึกษาใหม่ระดับคณะ</span>
+                        </label>
+                        <label class="activity-option">
+                            <input type="radio" name="activity" value="เตรียมความพร้อมนักศึกษาใหม่ระดับคณะ">
+                            <span>เตรียมความพร้อมนักศึกษาใหม่ระดับคณะ</span>
+                        </label>
+                        <label class="activity-option">
+                            <input type="radio" name="activity" value="ไหว้ครูระดับคณะ">
+                            <span>ไหว้ครูระดับคณะ</span>
+                        </label>
+                        <label class="activity-option">
+                            <input type="radio" name="activity" value="กีฬาสีระดับคณะ">
+                            <span>กีฬาสีระดับคณะ</span>
+                        </label>
+                        <label class="activity-option">
+                            <input type="radio" name="activity" value="อื่นๆ" id="otherActivity">
+                            <span>อื่นๆ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group other-activity-group" id="otherActivityGroup" style="display: none;">
+                    <label for="customActivity">ระบุชื่อกิจกรรม</label>
+                    <input type="text" id="customActivity" name="customActivity">
+                </div>
+
+                <div class="form-group">
+                    <label for="activityImage">อัพโหลดรูปภาพกิจกรรม (ถ้ามี)</label>
+                    <input type="file" id="activityImage" name="activityImage" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="activityDate">วันที่เข้าร่วมกิจกรรม</label>
+                    <input type="date" id="activityDate" name="activityDate" required>
+                </div>
+
+                <button type="submit" class="submit-btn">ส่งข้อมูลกิจกรรม</button>
+            </form>
+        </section>
+
+        <section class="submitted-activities" id="submittedActivities">
+            <h2>กิจกรรมที่ส่ง</h2>
+            <div class="activities-list" id="activitiesList">
+                <!-- กิจกรรมที่ส่งจะแสดงที่นี่ -->
+                <p class="no-activities">ยังไม่มีกิจกรรมที่ส่ง</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยราชภัฎสุรินทร์</p>
+        <p>© 2023 สงวนลิขสิทธิ์</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
