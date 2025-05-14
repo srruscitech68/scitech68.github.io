@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const otherActivityRadio = document.getElementById('otherActivity');
+    const otherActivityRadio = document.getElementById('otherActivity'); 
     const otherActivityGroup = document.getElementById('otherActivityGroup');
     const activityForm = document.getElementById('activityForm');
     const activitiesList = document.getElementById('activitiesList');
